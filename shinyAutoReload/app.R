@@ -10,9 +10,9 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-  output$teste_out <- renderText({
-      input$teste
-  })
+    output$teste_out <- renderText({
+        input$teste
+    })
 }
 
 shinyApp(ui, server)
